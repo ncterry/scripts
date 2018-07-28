@@ -61,36 +61,37 @@ Git
 	<br />EXAMPLES
 	<br />$ git add -A
 	<br />$ git commit -m "Initial commit"
-		[master (root-commit) 95647b3] Initial commit
-		 2 files changed, 30 insertions(+)
-		 create mode 100644 README
-		 create mode 100644 myfirstprogram.bat
+	<br />[master (root-commit) 95647b3] Initial commit
+	<br />2 files changed, 30 insertions(+)
+	<br />create mode 100644 README
+	<br />create mode 100644 myfirstprogram.bat
 	<br />$ git status
-		On branch master
-		nothing to commit, working tree clean
+	<br />On branch master
+	<br />nothing to commit, working tree clean
 	<br />$ git log
-		commit 95647b37a0093bae80298ea6c27699bfede24cbb (HEAD -> master)
-		Author: Nate Terry <nate@ncterry.com>
-		Date:   Sat Jul 28 14:49:25 2018 -0600
-			Initial commit
-	------------------END---------------------------
+	<br />commit 95647b37a0093bae80298ea6c27699bfede24cbb (HEAD -> master)
+	<br />Author: Nate Terry <nate@ncterry.com>
+	<br />Date:   Sat Jul 28 14:49:25 2018 -0600
+	<br />Initial commit
+	<br />------------------END---------------------------
 	
 15) Now we need to clone a current repository, and place it in our local directory.
-	$ git clone <url> <where to clone>
-	$ example
-	$ git clone https://github.com/ncterry/scripts.git .	:period after = current local directory
+	<br />$ git clone <url> <where to clone>
+	<br />$ example
+	<br />$ git clone https://github.com/ncterry/scripts.git .
+	<br />:period after = current local directory
 	
 
 ---------------------Start------------------------
 16) I just created a new folder in my local directory:	"scriptsClonedRepo"
-	$ git clone https://github.com/ncterry/scripts.git .
-		Cloning into '.'...
-		remote: Counting objects: 3, done.
-		remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-		Unpacking objects: 100% (3/3), done.
-		--> so we pulled everything from the github repo that we created on github.
+	<br />$ git clone https://github.com/ncterry/scripts.git .
+		<br />Cloning into '.'...
+		<br />remote: Counting objects: 3, done.
+		<br />remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+		<br />Unpacking objects: 100% (3/3), done.
+		<br />--> so we pulled everything from the github repo that we created on github.
 		
-	$ ls -la
+	<br />$ ls -la
 		total 9
 		drwxr-xr-x 1 terryn 1049089  0 Jul 28 14:58 ./
 		drwxr-xr-x 1 terryn 1049089  0 Jul 28 14:56 ../
