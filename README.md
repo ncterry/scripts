@@ -4,10 +4,10 @@ Git
 1) I created a repo from my github in browser.
 2) I included a readme fyi.
 3) From git bash
-	$ git config --list :shows the current user details.
+	\n$ git config --list :shows the current user details.
 	
 4) Change the email
-	$ git config --global user.email "nate@ncterry.com"
+	\n$ git config --global user.email "nate@ncterry.com"
 	
 5) View the current email:
 	$ git config --global user.email
