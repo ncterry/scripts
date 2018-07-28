@@ -21,7 +21,7 @@ Git
 8) Initialize:
 	$ git init
 
-9)Now we have our .git in the folder. If you want to STOP tracking this with git then use:
+9) Now we have our .git in the folder. If you want to STOP tracking this with git then use:
 	$ rm -rf .git 
 	
 10) Check this location, on it's git status:
@@ -154,8 +154,8 @@ Git
 		Already up to date.
 
 	------------------------END----------------------------------------------------------
-NOTE: Had email set to private on github, had to set to public to be able to push.
-NOTE: Had been using another github account and had those permissions saved in Windows. Must remove:
+	NOTE: Had email set to private on github, had to set to public to be able to push.
+	NOTE: Had been using another github account and had those permissions saved in Windows. Must remove:
 		 I had this problem too but managed to solve it, 
 		 the error is that ur computer has saved a git username 
 		 and password so if you shift to another account the error 403 will appear. Below is the solution
