@@ -6,7 +6,7 @@ title My First Batch File
 echo Hello
 : Pause program, press any key to continue
 pause
-: cls will clear the screen prior to it d
+: cls will clear the screen prior to it
 cls
 echo This is the first line
 echo This is the second line
