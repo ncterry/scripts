@@ -1,4 +1,9 @@
-NOTE:  $ ls -la      :gives much more detailed list results. Better than just "ls"
+<br/>NOTE:  $ ls -la      :gives much more detailed list results. Better than just "ls"
+<br/>NOTE: 	
+<br />	= line break
+<br />&nbsp;&nbsp;&nbsp; = line break + 3 spaces
+
+
 
 Git
 1) I created a repo from my github in browser.
@@ -57,22 +62,23 @@ Git
 	<br />$ git commit -m "Initial committ comment"
 	<br />$ git status
 	<br />$ git log		:show commit we just made
+	
 	<br />-----------------START---------------------------
 	<br />&nbsp;&nbsp;&nbsp;EXAMPLES
 	<br />$ git add -A
 	<br />$ git commit -m "Initial commit"
-	<br />&nbsp;&nbsp;&nbsp;	[master (root-commit) 95647b3] Initial commit
-	<br />&nbsp;&nbsp;&nbsp;	2 files changed, 30 insertions(+)
-	<br />&nbsp;&nbsp;&nbsp;	create mode 100644 README
-	<br />&nbsp;&nbsp;&nbsp;	create mode 100644 myfirstprogram.bat
+	<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	[master (root-commit) 95647b3] Initial commit
+	<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	2 files changed, 30 insertions(+)
+	<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	create mode 100644 README
+	<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	create mode 100644 myfirstprogram.bat
 	<br />$ git status
-	<br />&nbsp;&nbsp;&nbsp;	On branch master
-	<br />&nbsp;&nbsp;&nbsp;	nothing to commit, working tree clean
+	<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	On branch master
+	<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nothing to commit, working tree clean
 	<br />$ git log
-	<br />&nbsp;&nbsp;&nbsp;	commit 95647b37a0093bae80298ea6c27699bfede24cbb (HEAD -> master)
-	<br />&nbsp;&nbsp;&nbsp;	Author: Nate Terry <nate@ncterry.com>
-	<br />&nbsp;&nbsp;&nbsp;	Date:   Sat Jul 28 14:49:25 2018 -0600
-	<br />&nbsp;&nbsp;&nbsp;	Initial commit
+	<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	commit 95647b37a0093bae80298ea6c27699bfede24cbb (HEAD -> master)
+	<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Author: Nate Terry <nate@ncterry.com>
+	<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Date:   Sat Jul 28 14:49:25 2018 -0600
+	<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Initial commit
 	<br />------------------END---------------------------
 	
 15) Now we need to clone a current repository, and place it in our local directory.
