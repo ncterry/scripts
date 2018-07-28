@@ -58,21 +58,21 @@ Git
 	<br />$ git status
 	<br />$ git log		:show commit we just made
 	<br />-----------------START---------------------------
-	<br />&nbsp;&nbsp;&nbspEXAMPLES
-	<br />&nbsp;&nbsp;&nbsp$ git add -A
+	<br />&nbsp;&nbsp;&nbsp;EXAMPLES
+	<br />$ git add -A
 	<br />$ git commit -m "Initial commit"
-	<br />&nbsp;&nbsp;&nbsp[master (root-commit) 95647b3] Initial commit
-	<br />&nbsp;&nbsp;&nbsp2 files changed, 30 insertions(+)
-	<br />&nbsp;&nbsp;&nbspcreate mode 100644 README
-	<br />&nbsp;&nbsp;&nbspcreate mode 100644 myfirstprogram.bat
+	<br />&nbsp;&nbsp;&nbsp;	[master (root-commit) 95647b3] Initial commit
+	<br />&nbsp;&nbsp;&nbsp;	2 files changed, 30 insertions(+)
+	<br />&nbsp;&nbsp;&nbsp;	create mode 100644 README
+	<br />&nbsp;&nbsp;&nbsp;	create mode 100644 myfirstprogram.bat
 	<br />$ git status
-	<br />&nbsp;&nbsp;&nbspOn branch master
-	<br />&nbsp;&nbsp;&nbspnothing to commit, working tree clean
+	<br />&nbsp;&nbsp;&nbsp;	On branch master
+	<br />&nbsp;&nbsp;&nbsp;	nothing to commit, working tree clean
 	<br />$ git log
-	<br />&nbsp;&nbsp;&nbspcommit 95647b37a0093bae80298ea6c27699bfede24cbb (HEAD -> master)
-	<br />&nbsp;&nbsp;&nbspAuthor: Nate Terry <nate@ncterry.com>
-	<br />&nbsp;&nbsp;&nbspDate:   Sat Jul 28 14:49:25 2018 -0600
-	<br />&nbsp;&nbsp;&nbspInitial commit
+	<br />&nbsp;&nbsp;&nbsp;	commit 95647b37a0093bae80298ea6c27699bfede24cbb (HEAD -> master)
+	<br />&nbsp;&nbsp;&nbsp;	Author: Nate Terry <nate@ncterry.com>
+	<br />&nbsp;&nbsp;&nbsp;	Date:   Sat Jul 28 14:49:25 2018 -0600
+	<br />&nbsp;&nbsp;&nbsp;	Initial commit
 	<br />------------------END---------------------------
 	
 15) Now we need to clone a current repository, and place it in our local directory.
