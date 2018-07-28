@@ -57,7 +57,7 @@ Git
 	<br />$ git commit -m "Initial committ comment"
 	<br />$ git status
 	<br />$ git log		:show commit we just made
-	<br />-----------------START---------------------------
+	<br />---
 	<br />EXAMPLES
 	<br />$ git add -A
 	<br />$ git commit -m "Initial commit"
