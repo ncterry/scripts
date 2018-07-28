@@ -17,8 +17,10 @@ Git
 	$ git config --help
 
 7) Move to directory with the code.
+
 8) Initialize:
 	$ git init
+
 9)Now we have our .git in the folder. If you want to STOP tracking this with git then use:
 	$ rm -rf .git 
 	
@@ -41,12 +43,12 @@ Git
 	
 12) Add to staging area:
 	$ git add -A 					:Adds ALL
-	$ git add myfirstprogram.bat	:Adds just this file 
-	--> now if you run $ git status    then those files will be green instead of red. 
+	$ git add myfirstprogram.bat			:Adds just this file 
+	:--> now if you run $ git status    then those files will be green instead of red. 
 		They have been staged.
 	
 13) Remove files from staging area.
-	$ git reset myfirstprogram.bat 	:remove file from staging area
+	$ git reset myfirstprogram.bat 				:remove file from staging area
 	$ git reset						:remove all files from staging area.
 	
 	
