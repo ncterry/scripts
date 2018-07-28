@@ -4,28 +4,28 @@ Git
 1) I created a repo from my github in browser.
 2) I included a readme fyi.
 3) From git bash
-	\n$ git config --list :shows the current user details.
+	<br />$ git config --list :shows the current user details.
 	
 4) Change the email
-	\n$ git config --global user.email "nate@ncterry.com"
+	<br />$ git config --global user.email "nate@ncterry.com"
 	
 5) View the current email:
-	$ git config --global user.email
-	nate@ncterry.com
+	<br />$ git config --global user.email
+	<br />nate@ncterry.com
 	
 6) Show the config help
-	$ git config --help
+	<br />$ git config --help
 
 7) Move to directory with the code.
 
 8) Initialize:
-	$ git init
+	<br />$ git init
 
 9) Now we have our .git in the folder. If you want to STOP tracking this with git then use:
-	$ rm -rf .git 
+	<br />$ rm -rf .git 
 	
 10) Check this location, on it's git status:
-	$ git status
+	<br />$ git status
 		On branch master
 
 		No commits yet
@@ -37,38 +37,38 @@ Git
 	--> We have these 2 files that are here, but have not been committed.
 	
 11) We are in are working directors, we can push to the staging area, then a final
-	push to the repository. This is good because you can selectively make that final
-	push so that the commits can show the step by step procedures that you have taken
-	when making this code. 
+	<br />push to the repository. This is good because you can selectively make that final
+	<br />push so that the commits can show the step by step procedures that you have taken
+	<br />when making this code. 
 	
 12) Add to staging area:
-	$ git add -A 					:Adds ALL
-	$ git add myfirstprogram.bat			:Adds just this file 
+	<br />$ git add -A 					:Adds ALL
+	<br />$ git add myfirstprogram.bat			:Adds just this file 
 	:--> now if you run $ git status    then those files will be green instead of red. 
 		They have been staged.
 	
 13) Remove files from staging area.
-	$ git reset myfirstprogram.bat 				:remove file from staging area
-	$ git reset						:remove all files from staging area.
+	<br />$ git reset myfirstprogram.bat 				:remove file from staging area
+	<br />$ git reset						:remove all files from staging area.
 	
 	
 14) Make the first total commit full procedure.
-	$ git add -A
-	$ git commit -m "Initial committ comment"
-	$ git status
-	$ git log		:show commit we just made
-	-----------------START---------------------------
-	EXAMPLES
-	$ git add -A
-	$ git commit -m "Initial commit"
+	<br />$ git add -A
+	<br />$ git commit -m "Initial committ comment"
+	<br />$ git status
+	<br />$ git log		:show commit we just made
+	<br />-----------------START---------------------------
+	<br />EXAMPLES
+	<br />$ git add -A
+	<br />$ git commit -m "Initial commit"
 		[master (root-commit) 95647b3] Initial commit
 		 2 files changed, 30 insertions(+)
 		 create mode 100644 README
 		 create mode 100644 myfirstprogram.bat
-	$ git status
+	<br />$ git status
 		On branch master
 		nothing to commit, working tree clean
-	$ git log
+	<br />$ git log
 		commit 95647b37a0093bae80298ea6c27699bfede24cbb (HEAD -> master)
 		Author: Nate Terry <nate@ncterry.com>
 		Date:   Sat Jul 28 14:49:25 2018 -0600
