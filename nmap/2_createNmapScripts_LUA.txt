@@ -1,0 +1,31 @@
+Null Bytes
+Create Your Own Nmap Scripts Using LUA
+
+
+Basic nmap command:
+# nmap -p80,443 --script dns-brute priceline.com
+
+Searching on ports 80, 443
+Searching these ports on priceline.com
+Using dns-brute script
+
+
+LUA - language behind nmap scripts
+
+-------------------
+Simple LUA Example - function sort 2 numbers
+File in nmap script directory:   sort.lua
+-------------------------------------------------------
+function sort (a, b)
+	if a > b then
+		return a
+	else
+		return b
+	end
+end
+----
+print("Enter two numbers")
+a = io.read()
+b = io.read()
+print(sort(a,b))
+--------------------------------------------------------

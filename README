@@ -1,0 +1,169 @@
+NOTE:  $ ls -la      :gives much more detailed list results. Better than just "ls"
+
+Git
+1) I created a repo from my github in browser.
+2) I included a readme fyi.
+3) From git bash
+	$ git config --list :shows the current user details.
+	
+4) Change the email
+	$ git config --global user.email "nate@ncterry.com"
+	
+5) View the current email:
+	$ git config --global user.email
+	nate@ncterry.com
+	
+6) Show the config help
+	$ git config --help
+
+7) Move to directory with the code.
+8) Initialize:
+	$ git init
+9)Now we have our .git in the folder. If you want to STOP tracking this with git then use:
+	$ rm -rf .git 
+	
+10) Check this location, on it's git status:
+	$ git status
+		On branch master
+
+		No commits yet
+		Untracked files:
+		  (use "git add <file>..." to include in what will be committed)
+				README
+				myfirstprogram.bat
+		nothing added to commit but untracked files present (use "git add" to track)
+	--> We have these 2 files that are here, but have not been committed.
+	
+11) We are in are working directors, we can push to the staging area, then a final
+	push to the repository. This is good because you can selectively make that final
+	push so that the commits can show the step by step procedures that you have taken
+	when making this code. 
+	
+12) Add to staging area:
+	$ git add -A 					:Adds ALL
+	$ git add myfirstprogram.bat	:Adds just this file 
+	--> now if you run $ git status    then those files will be green instead of red. 
+		They have been staged.
+	
+13) Remove files from staging area.
+	$ git reset myfirstprogram.bat 	:remove file from staging area
+	$ git reset						:remove all files from staging area.
+	
+	
+14) Make the first total commit full procedure.
+	$ git add -A
+	$ git commit -m "Initial committ comment"
+	$ git status
+	$ git log		:show commit we just made
+	-----------------START---------------------------
+	EXAMPLES
+	$ git add -A
+	$ git commit -m "Initial commit"
+		[master (root-commit) 95647b3] Initial commit
+		 2 files changed, 30 insertions(+)
+		 create mode 100644 README
+		 create mode 100644 myfirstprogram.bat
+	$ git status
+		On branch master
+		nothing to commit, working tree clean
+	$ git log
+		commit 95647b37a0093bae80298ea6c27699bfede24cbb (HEAD -> master)
+		Author: Nate Terry <nate@ncterry.com>
+		Date:   Sat Jul 28 14:49:25 2018 -0600
+			Initial commit
+	------------------END---------------------------
+	
+15) Now we need to clone a current repository, and place it in our local directory.
+	$ git clone <url> <where to clone>
+	$ example
+	$ git clone https://github.com/ncterry/scripts.git .	:period after = current local directory
+	
+
+---------------------Start------------------------
+16) I just created a new folder in my local directory:	"scriptsClonedRepo"
+	$ git clone https://github.com/ncterry/scripts.git .
+		Cloning into '.'...
+		remote: Counting objects: 3, done.
+		remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+		Unpacking objects: 100% (3/3), done.
+		--> so we pulled everything from the github repo that we created on github.
+		
+	$ ls -la
+		total 9
+		drwxr-xr-x 1 terryn 1049089  0 Jul 28 14:58 ./
+		drwxr-xr-x 1 terryn 1049089  0 Jul 28 14:56 ../
+		drwxr-xr-x 1 terryn 1049089  0 Jul 28 14:58 .git/
+		-rw-r--r-- 1 terryn 1049089 44 Jul 28 14:58 README.md
+-------------------END--------------------------
+
+17) View information about the remote repository
+	$ git remote -v			:
+	$ git branch -a			:
+	
+	
+	$ git remote -v
+		origin  https://github.com/ncterry/scripts.git (fetch)
+		origin  https://github.com/ncterry/scripts.git (push)
+
+	$ git branch -a
+		* master
+		  remotes/origin/HEAD -> origin/master		:red text
+		  remotes/origin/master						:red text 
+		  
+18) Commit changes to code 
+	$ git diff			:see whats different
+	$ git status		:see status of local 
+	$ git add -A
+	$ git commit -m "Modified the function sexyFunc"
+	
+19) Then push	
+	$ git pull origin master
+	$ git push origin master
+	
+	------------------------START----------------------------------------------------------
+	EXAMPLE
+	$ git status			===============RED TEXT SHOWS WE HAVE NOT COMMITTED===========================================
+		On branch master
+		Your branch is up to date with 'origin/master'.
+
+		Untracked files:
+		  (use "git add <file>..." to include in what will be committed)
+				myfirstprogram.bat		:NOTE RED TEXT = UNCOMMITTED
+		nothing added to commit but untracked files present (use "git add" to track)
+
+	$ git add -A			================ADD ALL LOCAL FILES TO COMMIT==========================================
+
+	$ git status			================SEE THAT WE HAVE ADDED==========================================
+		On branch master
+		Your branch is up to date with 'origin/master'.
+		Changes to be committed:
+			(use "git reset HEAD <file>..." to unstage)
+				new file:   myfirstprogram.bat    :NOTE GREEN TEXT = COMMITTED
+
+	$ git commit -m "First commit to remote repo"		===========LOCALLY COMMIT===================
+		[master 0528e74] First commit to remote repo
+		1 file changed, 13 insertions(+)
+		create mode 100644 myfirstprogram.bat
+		
+	-->Make sure that we are up to date with our remote repo
+	$ git pull origin master
+		From https://github.com/ncterry/scripts
+		 * branch            master     -> FETCH_HEAD
+		Already up to date.
+
+	------------------------END----------------------------------------------------------
+NOTE: Had email set to private on github, had to set to public to be able to push.
+NOTE: Had been using another github account and had those permissions saved in Windows. Must remove:
+		 I had this problem too but managed to solve it, 
+		 the error is that ur computer has saved a git username 
+		 and password so if you shift to another account the error 403 will appear. Below is the solution
+				For Windows you can find the keys here:
+					control panel > 
+					user accounts > 
+					credential manager > 
+					Windows credentials > 
+					Generic credentials
+			Next remove the Github keys.
+
+
+	

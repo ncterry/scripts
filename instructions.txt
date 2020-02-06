@@ -1,0 +1,7 @@
+Here are standard shell scripts:
+---------------------------------------------------------
+./pingsweep.sh - this asks the user to enter a 3-part subnet such
+	as   10.0.2  and it will then take that subnet and add a
+	dot(1:254) so that it will then ping everything on that 
+	network, 10.0.2.1   10.0.2.2   ...   10.0.2.254
+---------------------------------------------------------

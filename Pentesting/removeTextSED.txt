@@ -1,0 +1,45 @@
+# Results of a simple:   wget cnn.com
+
+
+Sitemap: https://www.cnn.com/sitemaps/cnn/index.xml
+Sitemap: https://www.cnn.com/sitemaps/cnn/news.xml
+Sitemap: https://www.cnn.com/sitemaps/sitemap-section.xml
+Sitemap: https://www.cnn.com/sitemaps/sitemap-interactive.xml
+Sitemap: https://www.cnn.com/ampstories/sitemap.xml
+Sitemap: https://edition.cnn.com/sitemaps/news.xml
+User-agent: *
+Allow: /audio/podcasts/
+Allow: /partners/ipad/live-video.json
+/*.jsx$
+/ads/
+/aol/
+/audio/
+/beta/
+/browsers/
+/cl/
+/cnews/
+/cnn_adspaces
+/cnnbeta/
+/cnnintl_adspaces
+/development
+/editionssi
+/help/cnnx.html
+/NewsPass
+/NOKIA
+/partners/
+/pipeline/
+/pointroll/
+/POLLSERVER/
+/pr/
+/privacy
+/PV/
+/Quickcast/
+/quickcast/
+/QUICKNEWS/
+/search/
+/terms
+/test/
+/virtual/
+/WEB-INF/
+/web.projects/
+/webview/

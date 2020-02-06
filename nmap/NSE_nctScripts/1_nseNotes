@@ -1,0 +1,56 @@
+
+Below is a simple example of an NSE script to check if a port is open
+------Head = has metadata and states who wrote it.
+------Rule = setting the conditions/triggers that are going to be tested for.
+------Action = attach to rules/triggers 
+-----------------------------------------------------------------------
+We look to see if a port is open, if so, we return an action; statement.
+Create portrule
+	We are doing something based on the status of a port.
+	Pass in the host, and target port number
+	If port-protocol listed as "tcp" is "open"
+Then pass that to the action, which would return that this port is open
+------------------------------------------------------------------------
+ALWAYS Save a NSE script in:	/usr/share/nmap/scripts
+Run our script:
+		nmap -p80,443 --script testy ###.###.###.###
+--======================================================================
+--======================================================================
+-- HEAD --
+
+description = [[
+This is a simple script example that determines if a port is open.
+]]
+
+author = "Null Byte"
+
+-- RULE --
+
+portrule = function(host, port)
+	return port.protocol == "tcp"
+		and port.state == "open"
+end
+
+-- ACTION --
+
+action = function(host, port)
+	return "This port is open!"
+end
+--==================================================================
+--==================================================================
+EXAMPLE RUN:
+root@kali:~/Desktop/# nmap -p80,443 --script testy priceline.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-01-23 18:00 MST
+Nmap scan report for priceline.com (64.6.21.5)
+Host is up (0.015s latency).
+Other addresses for priceline.com (not scanned): 64.6.28.5
+rDNS record for 64.6.21.5: 64-6-21-5.priceline.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+|_testy: This port is open!
+443/tcp open  https
+|_testy: This port is open!
+
+Nmap done: 1 IP address (1 host up) scanned in 0.61 seconds
+
