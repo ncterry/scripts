@@ -1,5 +1,6 @@
 #!/bin/bash
 #----------
+#scriptInput2.sh
 : '
 Complicated inputs.
 Read a file line by line, and print it out, line by line.

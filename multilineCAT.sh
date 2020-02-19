@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# multilineCAT.sh
 
 
 # a way to display/print numerous lines to terminal etc...

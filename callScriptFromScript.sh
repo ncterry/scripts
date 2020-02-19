@@ -8,9 +8,10 @@ BUT
 The bottom line is calling a script from this script.
 We got info/file from our wget, and we want to edit that file.
 We created another script to edit in the way we want.
-Call that new script from here:
 
-sh nextscript.sh
+Call that new script from this script:
+
+	# sh nextscript.sh
 ==========================================================
 '
 
@@ -28,7 +29,9 @@ if [ -z $domain ]; then		#-z = null, no input
 fi
 #---------------------------------------------------
 #wget - The non-interactive network downloader.
-wget -q $domain/robots.txt #-q = quiet = no wget text in terminal
+wget -q $domain -O callScriptFromScript.txt #-q = quiet = no wget text in terminal
+echo "callScriptFromScript.txt is created from callScriptFromScript.sh" >> /media/sf_KaliSecurity/Scripts/callScriptFromScript.txt
+
 #
 # Entered cnn.com for wget, and got this......
 :'
@@ -42,6 +45,11 @@ Disallow: /ads/
 Disallow: /aol/
 '
 # We also created a script to remove the Disallow: text
-# This file is in the same directory as robots.sh
+# This file is in the same directory
 # execute another script from this script.
-sh /root/Desktop/ShellScripts/Pentesting/removeText.sh
+# NOTE - we tried this again, and while the process works, 
+#	the get results are not the same as before. 
+#	Simply a different cnn
+# removeText.sh is using a sample wget file, not the wget file we puller here.
+# Don't change, this is just an example.
+sh /media/sf_KaliSecurity/Scripts/removeText.sh

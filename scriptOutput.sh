@@ -1,11 +1,11 @@
 #!/bin/bash
-
+#scriptOutput.sh
 
 # Simple command:
 #	./scriptOutput.sh
 # This will read the directory like a normal   ls -al    from terminal.
 # It will print the normal    ls -al    on the file, as well as terminal.
-# 
+#
 # The 2 on this script command will create file2, and indicate any errors.
 # If there are no errors, file2.txt will be empty
 #

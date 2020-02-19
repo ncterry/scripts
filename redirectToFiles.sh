@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#redirectToFiles.sh
 
 # one arrow > will re-write text on a file.
 # Send text to a file that is going to be created.------------------------
@@ -10,6 +10,8 @@ echo "This text is going into a file" > /root/Desktop/2_RedirectToFile.txt
 # If you use just one > then it will overwrite everything.
 #
 # Read text from another file, and append that onto the new file also.
-cat /root/Desktop/ShellScripts/1_HelloBashScripting.sh >> /root/Desktop/2_RedirectToFile.txt
+echo "Sent from \'redirectToFiles.sh\' " >> /root/Desktop/2_RedirectToFile.txt
+cat  /media/sf_KaliSecurity/Scripts/natefile.txt  >> /root/Desktop/2_RedirectToFile.txt
+echo "From /media/sf_KaliSecurity/Scripts/redirectToFiles.sh" >> /root/Desktop/2_RedirectToFile.txt
 
 

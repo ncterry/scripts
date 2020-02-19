@@ -1,4 +1,5 @@
 #!/bin/bash
+#pingSweepCutter.sh
 #---------
 # Ask the user for a target network subnet.
 # Then we for-loop ping the full network, subnet.(1:254)

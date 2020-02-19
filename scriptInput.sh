@@ -1,6 +1,6 @@
 #!/bin/bash
 #----------
-
+#scriptInput.sh
 
 # Simply  print the 3 inputs when executing script
 # 	./scriptInput.sh bmw toyota honda

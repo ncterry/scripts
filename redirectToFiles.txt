@@ -1,0 +1,7 @@
+
+This has text that is going to 
+be taken by   redirectToFiles.txt
+and sent to another txt file on the desktop.
+
+Does this work, i hope so
+this is the second time

@@ -1,4 +1,5 @@
 #!/bin/bash
+#pipes.sh
 #----------
 # Send output from one script to another script.
 # The message here is sent to the other file.
